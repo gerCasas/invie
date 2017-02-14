@@ -104,3 +104,23 @@ button{
 .header{
   position: relative;
 }
+
+.footer{
+  background: #273b47;
+}
+
+.contacto img{
+  /* esta propiedad es para que la imagen solo ocupe esa linea horizontal (los siguientes elemtos seran movidos hacia abajo)*/
+  display: block;
+}
+
+.contacto strong{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.contacto span{
+  color: white;
+  text-decoration: none;
+}
