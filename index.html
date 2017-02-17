@@ -34,7 +34,7 @@
       <div class="contenedor">
         <h1 class="titulo">Guitarras Inviesibles</h1><!-- titulo -->
         <h3 class="title-a">Sé la estrella de rock que siempre has querido ser.</h3><!-- resumen -->
-        <button>Conoce más</button><!-- boton -->
+        <button class="button">Conoce más</button><!-- boton -->
       </div>
     </section>
 
@@ -70,50 +70,64 @@
 
     <footer class="footer">
       <div class="contenedor_fotter">
+
         <div class="contacto">
-          <img src="images/invie-white.png" alt="logotipo blanco"/>
-          <!-- Con tel: en el href indicamos al sistema operativo que este link es un telefono -->
-          <a href="tel:+54562123123"></a><strong>Telefono</strong><span>562123123</span></a>
-          <!-- Con mailto: pasa algo similar -->
-          <a href="mailto:"></a><strong>E-mail</strong><span>contacto@test.com</span></a>
+          <div>
+            <img src="images/invie-white.png" alt="logotipo blanco"/>
+            <!-- Con tel: en el href indicamos al sistema operativo que este link es un telefono -->
+            <div>
+              <a href="tel:+54562123123"></a><strong>Telefono</strong>
+              <span>562123123</span></a>
+            </div>
+            <!-- Con mailto: pasa algo similar -->
+            <div>
+              <a href="mailto:"></a><strong>E-mail</strong>
+              <span>contacto@test.com</span></a>
+            </div>
+          </div>
         </div>
 
         <!-- name es lo que se envia al back end para obtener su valor -->
         <!-- value tambien se puede enviar al back end -->
         <form class="formulario">
-          <label for="nombre-txt">Nombre</label>
-          <input type="text" required id="nombre-txt" name="nombre"/>
-          <label for="email">E-mail</label>
-          <input type="email" required id="email" name="email"/>
 
-          <div class="sexo">
-            <label for="mujer">
-              <input type="radio" id="mujer" name="sexo" value="mujer">Mujer
-            </label>
-            <label for="hombre">
-              <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
-            </label>
+          <div class="col1">
+            <label for="nombre-txt">Nombre</label>
+            <input type="text" required id="nombre-txt" name="nombre"/>
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email"/>
+
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" id="mujer" checked name="sexo" value="mujer">Mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+              </label>
+            </div>
+
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion">Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+              </label>
+            </div>
           </div>
 
-          <div class="intereses">
-            <label for="cotizacion">
-              <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion">Cotización
-            </label>
-            <label for="reclamos">
-              <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
-            </label>
-            <label for="comentarios">
-              <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
-            </label>
-            <label for="otros">
-              <input type="checkbox" id="otros" name="intereses" value="otros">Otros
-            </label>
-          </div>
-
-          <div>
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
-            <input type="submit" name="" value="Enviar">
+          <div class="col2">
+            <div>
+              <label for="comentarios">Comentarios</label>
+              <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
+              <input type="submit" name="" value="Enviar" class="button">
+            </div>
           </div>
         </form>
       </div>
